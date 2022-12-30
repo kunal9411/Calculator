@@ -8,94 +8,111 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    font-size: 20px;
 }
 
 .outter {
-    width: 28rem;
+    min-width: 28rem;
+    max-width: 35rem;
     border: 1px solid rgb(225, 224, 224);
     box-shadow: 0px 1px 4px 0px rgb(0,0,0,0.2);
 
     padding: 1rem;
 }
 
-.result {
+.result-display {
     height: 5rem;
     width: 100%;
     border: 1px solid rgb(221, 221, 221);
 }
-.result:hover {
+.result-display:hover {
     box-shadow: inset 0px 1px 4px 0px rgb(0,0,0,0.2);
     border-color: rgb(187,187,187);
 }
 
 .btn {
     width: 100%;
-
     margin-top: 1rem;
 }
 
-.operator {
+.operators {
     display: flex;
     gap: 1rem;
 }
 
-.sign {
-    height: 3.6rem;
-    width: 5.7rem;
+
+.operator-sign {
+    width: 100%;
+    min-height: 3.5rem;
+    max-height: 4rem;
     background-color: rgb(221,221,221);
     border: 1px solid rgb(187, 187, 187);
     color: rgb(119,119,119);
     cursor: pointer;
     font-size: 1.5rem;
 }
-.sign:hover {
+
+.operator-sign:hover {
     box-shadow: 0px 1px 4px 0px rgb(0,0,0,0.2);
     border-color: rgb(170, 170, 170);
 }
 
+.value {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .numbers {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+} 
+.numbers-block {
+    display: flex;
     gap: 1rem;
 }
-.num {
-    height: 3.6rem;
-    width: 5.7rem;
+
+.number-btn {
+    width: 100%;
+    min-height: 3.5rem;
+    max-height: 4rem;
     background-color: rgb(249,249,249);
     border: 1px solid rgb(221, 221, 221);
     color: rgb(119,119,119);
     cursor: pointer;
     font-size: 1.5rem;
 }
-.num:hover {
+.number-btn:hover {
     box-shadow: 0px 1px 4px 0px rgb(0,0,0,0.2);
     background-color: rgb(241, 241, 241);
     border-color: rgb(187, 187, 187);
 }
 
-.equalsign {
-    height: 17.4rem;
-    width: 5.7rem;
+.equal-operator-sign {
+    height: 100%;
+    width: 5.6rem;
     background-color: rgb(77, 144, 254);
     color: rgb(249,249,249);
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
 }
-.equalsign:hover {
+.equal-operator-sign:hover {
     background-color: rgb(48, 124, 249);
 }
 
-.value {
-    display: flex;
-    margin-top: 1rem;
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .outter {
-        width: 100%;
-        padding: 10px 1rem;
+        min-width: 20rem;
+        max-width: 25rem;
+        padding: 1rem;
+    }
+    .equal-operator-sign {
+        width: 3.7rem;
+    }
+    .number-btn, .operator-sign {
+        min-height: 3rem;
+        max-height: 3.5rem;
     }
 }
