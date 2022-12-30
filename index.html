@@ -9,33 +9,40 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="main" class="outter">
-        <input type="text" class="result"></input>
-        <div id="button" class="btn">
-            <div class="operator">
-                <input type="button" value="+" class="sign">
-                <input type="button" value="-" class="sign">
-                <input type="button" value="*" class="sign">
-                <input type="button" value="/" class="sign">
+    <div class="outter">
+        <input type="text" class="result-display"></input>
+        <div class="btn">
+            <div class="operators">
+                <input type="button" value="+" class="operator-sign">
+                <input type="button" value="-" class="operator-sign">
+                <input type="button" value="*" class="operator-sign">
+                <input type="button" value="/" class="operator-sign">
             </div>
             <div class="value">
                 <div class="numbers">
-                    <input type="button" value="7" class="num" onclick="insert(7)">
-                    <input type="button" value="8" class="num" onclick="insert(8)">
-                    <input type="button" value="9" class="num" onclick="insert(9)">
-                    <input type="button" value="4" class="num" onclick="insert(4)">
-                    <input type="button" value="5" class="num" onclick="insert(5)">
-                    <input type="button" value="6" class="num" onclick="insert(6)">
-                    <input type="button" value="1" class="num" onclick="insert(1)">
-                    <input type="button" value="2" class="num" onclick="insert(2)">
-                    <input type="button" value="3" class="num" onclick="insert(3)">
-                    <input type="button" value="0" class="num" onclick="insert(0)">
-                    <input type="button" value="." class="num">
-                    <input type="button" value="C" class="num">
-                    <input type="button" value="C" class="num">
+                    <div class="numbers-block">
+                        <input type="button" value="7" class="number-btn">
+                        <input type="button" value="8" class="number-btn">
+                        <input type="button" value="9" class="number-btn">
+                    </div>
+                    <div class="numbers-block">
+                        <input type="button" value="4" class="number-btn">
+                        <input type="button" value="5" class="number-btn">
+                        <input type="button" value="6" class="number-btn">
+                    </div>
+                    <div class="numbers-block">
+                        <input type="button" value="1" class="number-btn">
+                        <input type="button" value="2" class="number-btn">
+                        <input type="button" value="3" class="number-btn">
+                    </div>
+                    <div class="numbers-block">
+                        <input type="button" value="0" class="number-btn">
+                        <input type="button" value="." class="number-btn">
+                        <input type="button" value="C" class="number-btn">
+                    </div>
                 </div>
-                <div class="equal">
-                    <input type="button" value="=" class="equalsign">
+                <div class="equal-operator">
+                    <input type="button" value="=" class="equal-operator-sign">
                 </div>
             </div>
         </div>
