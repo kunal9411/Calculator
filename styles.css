@@ -20,9 +20,14 @@ body {
 }
 
 .result-display {
-    height: 5rem;
     width: 100%;
+    height: 5rem;
     border: 1px solid rgb(221, 221, 221);
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .result-display:hover {
     box-shadow: inset 0px 1px 4px 0px rgb(0,0,0,0.2);
@@ -63,8 +68,9 @@ body {
 }
 
 .numbers {
+    width: 75%;
+
     display: flex;
-    width: 100%;
     flex-direction: column;
     gap: 1rem;
 } 
@@ -88,10 +94,12 @@ body {
     background-color: rgb(241, 241, 241);
     border-color: rgb(187, 187, 187);
 }
-
+.equal-operator {
+    width: 23%;
+}
 .equal-operator-sign {
+    width: 100%;
     height: 100%;
-    width: 5.6rem;
     background-color: rgb(77, 144, 254);
     color: rgb(249,249,249);
     border: none;
@@ -102,17 +110,23 @@ body {
     background-color: rgb(48, 124, 249);
 }
 
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
     .outter {
-        min-width: 20rem;
-        max-width: 25rem;
-        padding: 1rem;
+      min-width: 15rem;
+      max-width: 20rem;
     }
-    .equal-operator-sign {
-        width: 3.7rem;
+    .numbers {
+      width: 85%;
     }
     .number-btn, .operator-sign {
-        min-height: 3rem;
-        max-height: 3.5rem;
+      min-height: 2rem;
+      max-height: 2.5rem;
+      font-size: 1rem;
     }
-}
+    .equal-operator {
+        width: 24%;
+    }
+    .equal-operator-sign {
+      font-size: 1rem;
+    }
+  }
